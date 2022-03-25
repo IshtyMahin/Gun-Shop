@@ -5,7 +5,7 @@ import "./Shop.css"
 
 const Shop = () => {
   const [guns, setGuns] = useState([]);
-  const [cart, setCart] = useState([]);
+//   const [cart, setCart] = useState([]);
 
   useEffect(() => {
     fetch("https://raw.githubusercontent.com/mir-hussain/guns/main/data.json")
