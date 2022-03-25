@@ -1,5 +1,5 @@
 .navbar {
-    background-color: #f7aeae;
+    background-color: #f77878;
     height: 80px;
     display: flex;
     align-items: center;
@@ -13,6 +13,10 @@
   .navbar h1 {
     margin-left: 15px;
     font-size: 40px;
-    color: rgb(241, 28, 28);
+    color: rgb(70, 3, 3);
     font-family: "Metamorphous", cursive;
   }
+
+  /* @media screen {
+      
+  } */
