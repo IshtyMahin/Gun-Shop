@@ -19,8 +19,6 @@ const Shop = () => {
     if(cart.length < 4 ){
         const newCart = [...cart, product];
         setCart(newCart);
-     
-      
     }
   };
   

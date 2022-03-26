@@ -6,6 +6,7 @@ const SelectCart = (props) => {
 
   return (
     <div>
+      <h1 className="heading">Selected Item</h1>
       <div>
         {cart.map((cart) => (
           <h2>Name:{cart.name}</h2>
