@@ -1,9 +1,10 @@
 # Website Name : `Gun Shop`
 
+## live site link
+[https://ishtymahin-assignment8.netlify.app/](https://ishtymahin-assignment8.netlify.app/)
+
 ## github link
 [https://github.com/Programming-Hero-Web-Course4/lucky-one-IshtyMahin](https://github.com/Programming-Hero-Web-Course4/lucky-one-IshtyMahin)
-
-## live site link
 
 
 # Getting Started with Create React App
