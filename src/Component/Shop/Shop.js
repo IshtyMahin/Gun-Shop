@@ -16,24 +16,11 @@ const Shop = () => {
   }, []);
 
   const handleAddToCart = (product) => {
-    // console.log(product);
-    //do not do this:  cart.push(product)
-    
     if(cart.length < 4 ){
-      if(cart.length === 0){
         const newCart = [...cart, product];
-        // console.log(cart)
         setCart(newCart);
-      }
-      for (let i = 0; i < cart.length; i++){
-        console.log(cart[i]);
-        if(cart[i].id !== product.id ){
-
-          const newCart = [...cart, product];
-          // console.log(newCart)
-          setCart(newCart);
-        }
-      }
+     
+      
     }
   };
   
