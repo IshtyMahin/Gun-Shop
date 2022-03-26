@@ -4,23 +4,54 @@ import SelectCart from "../SelectCart/SelectCart";
 import "./Shop.css"
 
 const Shop = () => {
-  const [guns, setGuns] = useState([]);
-//   const [cart, setCart] = useState([]);
+  const [products, setProducts] = useState([]);
+  const [cart, setCart] = useState([]);
+  // console.log(cart)
+  const [randomCart,setRandomCart] = useState([]);
 
   useEffect(() => {
     fetch("https://raw.githubusercontent.com/mir-hussain/guns/main/data.json")
       .then((res) => res.json())
-      .then((data) => setGuns(data));
+      .then((data) => setProducts(data));
   }, []);
+
+  const handleAddToCart = (product) => {
+    // console.log(product);
+    //do not do this:  cart.push(product)
+    if(cart.length < 4){
+      if(cart.length === 0){
+        const newCart = [...cart, product];
+        // console.log(cart)
+        setCart(newCart);
+      }
+      for (let i = 0; i < cart.length; i++){
+        if(cart[i].id !== product.id ){
+          const newCart = [...cart, product];
+          // console.log(newCart)
+          setCart(newCart);
+        }
+      }
+    }
+  };
+  
+  const randomSelected = (cart) =>{
+      console.log(cart)
+      const random = cart[Math.floor(Math.random()*cart.length)];
+      // console.log(random)
+      setRandomCart(random);
+
+      
+  }
+  
   return (
     <div className="shop-container">
       <div className="card-container">
-      {guns.map((gun) => (
-        <Card gun={gun} key={gun.id}></Card>
+      {products.map((product) => (
+        <Card product={product} handleAddToCart={handleAddToCart} key={product.id}></Card>
       ))}
       </div>
       <div className="selectCart-container">
-        <SelectCart></SelectCart>
+        <SelectCart cart={cart} key={cart.id} randomSelected={randomSelected} randomCart={randomCart}></SelectCart>
       </div>
     </div>
   );

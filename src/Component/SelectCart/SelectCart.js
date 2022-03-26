@@ -1,9 +1,18 @@
 import React from 'react';
+// import Choose from '../Choose/Choose';
 import "./SelectCart.css"
-const SelectCart = () => {
+const SelectCart = (props) => {
+    const {cart,randomCart ,randomSelected} =props
     return (
         <div>
-            <h1 className='name'>Ishtiaq uddin</h1>
+            
+            {
+                cart.map((cart) =><p>Name:{cart.name}</p>)
+            }
+            
+            <button onClick={()=>(randomSelected(cart))}>Chose one</button>
+            <h1>{randomCart.name}</h1>
+            <button>remove all</button>
         </div>
     );
 };
