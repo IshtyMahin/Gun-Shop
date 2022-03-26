@@ -17,6 +17,8 @@
     font-family: "Metamorphous", cursive;
   }
 
-  /* @media screen {
-      
-  } */
+  @media screen and (max-width:400px){
+    .navbar h1{
+      font-size: 30px;
+    }
+  }

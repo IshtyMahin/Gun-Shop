@@ -16,7 +16,7 @@
     padding: 50px 0;
     display: grid;
     gap: 50px;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     background-color: #f0cece;
   }
   .selectCart-container{
@@ -41,4 +41,18 @@
   }
   .remove{
     background-color: rgb(236, 78, 78);
+  }
+
+
+  @media screen and (max-width:450px){
+    .shop-container{
+      flex-direction: column-reverse;
+    }
+    .card-container {
+      width: 100%;
+
+    }
+    .selectCart-container{
+      width: 100%;
+    }
   }

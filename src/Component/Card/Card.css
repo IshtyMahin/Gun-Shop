@@ -63,3 +63,11 @@
   .icon {
     font-size: 1.5rem;
   }
+
+  @media screen and (max-width:350px){
+     .card{
+       width: 80%;
+     }
+
+
+  }
