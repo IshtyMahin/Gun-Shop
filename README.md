@@ -1,5 +1,6 @@
 # Getting Started with Create React App
-[githubLink](https://github.com/Programming-Hero-Web-Course4/lucky-one-IshtyMahin)
+# github link
+[https://github.com/Programming-Hero-Web-Course4/lucky-one-IshtyMahin](https://github.com/Programming-Hero-Web-Course4/lucky-one-IshtyMahin)
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
